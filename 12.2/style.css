@@ -68,12 +68,6 @@ body {
   text-align: center;
 }
 
-.quote::before {
-  content: '\201E'
-}
-.quote::after {
-  content: '\201D';
-}
 .author {
   color: #fff;
   text-align: right;
