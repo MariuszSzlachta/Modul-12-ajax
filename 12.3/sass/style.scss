@@ -96,3 +96,83 @@ li {
     font-weight: bold;
   }
 }
+@media (max-width: 1024px) and (orientation: portrait) {
+  .countries {
+    margin-top: 30vh;
+  }
+}
+@media (max-width: 992px) and (orientation: landscape) {
+  .wrapper {
+    margin-bottom: 0.5em;
+  }
+  .app-name {
+    margin: .5em;
+    font-size: 2em;
+  }
+  label {
+    display: none;
+  }
+  .input-country-name {
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+  }
+  .list-heading {
+    font-size: 1.2em;
+  }
+  .countries {
+    margin-top: 30vh;
+  }
+  li {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+  }
+  .card .card-heading {
+    font-size: 1.1em;
+    margin: 0.7em 0;
+  }
+  .card .card-lead {
+    font-size: 0.9em;
+    margin: 0.5em 0;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .wrapper {
+    margin-bottom: 0.5em;
+  }
+  .app-name {
+    margin: .5em;
+    font-size: 2em;
+  }
+
+  .input-country-name {
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+  }
+  .list-heading {
+    font-size: 1.2em;
+  }
+  .countries {
+    width: 100%;
+    margin-top: 25vh;
+  }
+  li {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    max-width: 100%;
+  }
+  .card .card-heading {
+    font-size: 1.1em;
+    margin: 0.7em 0;
+  }
+  .card .card-lead {
+    font-size: 0.9em;
+    margin: 0.5em 0;
+  }
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+  .countries {
+    margin-top: 30vh;
+  }
+}

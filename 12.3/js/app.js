@@ -6,12 +6,6 @@ var template = document.getElementById('template').innerHTML;
 Mustache.parse(template);
 var renderedTemplates = '';
 
-
-document.getElementById('search').addEventListener('click', function(){
-  renderedTemplates = '';
-  searchCountries();
-});
-
 document.getElementById('country-name').addEventListener('change', function(){
   renderedTemplates = '';
   searchCountries();
@@ -38,7 +32,6 @@ function showCountriesList(resp) {
   resp.forEach(function (item) {
     console.log(resp);
     item.currencies = item.currencies.join (', ');
-    item.timezones = item.timezones.join(', ');
     item.borders = item.borders.join(', ');
     renderedTemplates += Mustache.render(template, item);
   });

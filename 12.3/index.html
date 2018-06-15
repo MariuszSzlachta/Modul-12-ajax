@@ -16,7 +16,6 @@
         <h1 class="app-name">Country search engine</h1>
         <label for="country-name">Search for countries</label>
         <input id="country-name" class="input-country-name" type="text" placeholder="enter country name">
-        <button id="search" class="btn">Search a country</button>
         <h2 class="list-heading">List of countries:</h2>
       </div>
       <ul id="countries" class="countries">
@@ -28,9 +27,8 @@
       <li class="country">
         <div class="card">
           <h3 class="card-heading"><span>Country:</span> {{name}}</h3>
-          <p class="card-lead"><span>Capital:</span> {{currencies}}</p>
+          <p class="card-lead"><span>Capital:</span> {{capital}}</p>
           <p class="card-lead"><span>Currencies:</span> {{currencies}}</p>
-          <p class="card-lead"><span>Timezone:</span> {{timezones}}</p>
           <p class="card-lead"><span>Borders:</span> {{borders}}</p>
         </div>
       </li>
