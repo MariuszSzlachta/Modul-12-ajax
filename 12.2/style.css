@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 100vh;
+  max-height: 100vh;
+  background: #00a8ff;
+  margin: 0 auto;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 4em 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.app-title {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.box {
+  margin-bottom: 2em;
+}
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.trigger,
+.tweet {
+  width: 500px;
+  padding: 1em 2em;
+  border: 1px solid #fff;
+  margin-bottom: 4em; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: transparent;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1em;
+}
+.trigger:hover,
+.tweet:hover {
+  color: #00a8ff;
+  background-color: #fff;
+}
+.fab {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.quote {
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+}
+
+.author {
+  color: #fff;
+  text-align: right;
+}
+
+@media (max-width: 500px) {
+  .app {
+    padding: 1em 12px;
+  }
+  .buttons-wrapper {
+    width: 100%;
+  }
+  .trigger,
+  .tweet {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
